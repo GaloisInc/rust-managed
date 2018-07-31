@@ -10,9 +10,9 @@ use std::collections::BTreeMap;
 use std::collections::btree_map::{Iter as BTreeIter, IterMut as BTreeIterMut,
                                   Range as BTreeRange};
 #[cfg(all(feature = "alloc", not(feature = "std")))]
-use alloc::collections::btree_map::BTreeMap;
+use alloc::btree_map::BTreeMap;
 #[cfg(all(feature = "alloc", not(feature = "std")))]
-use alloc::collections::btree_map::{Iter as BTreeIter, IterMut as BTreeIterMut,
+use alloc::btree_map::{Iter as BTreeIter, IterMut as BTreeIterMut,
                                     Range as BTreeRange};
 
 /// A managed map.
